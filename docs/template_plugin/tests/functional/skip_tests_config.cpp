@@ -104,8 +104,7 @@ std::vector<std::string> disabledTestPatterns() {
     // CVS-63989
      retVector.emplace_back(R"(.*ReferenceSigmoidLayerTest.*u64.*)");
     // CVS-64054
-    retVector.emplace_back(R"(.*ReferenceTopKTest.*topk_max_sort_none)");
-    retVector.emplace_back(R"(.*ReferenceTopKTest.*topk_min_sort_none)");
+    retVector.emplace_back(R"(.*ReferenceTopKTest.*topk_(max|max)_sort_none)");
 #endif
     return retVector;
 }
