@@ -148,16 +148,32 @@ throughout the OpenVINO documentation.
 Step 2: Configure the Environment
 +++++++++++++++++++++++++++++++++
 
-You must update several environment variables before you can compile and run OpenVINO™ applications. Open the Command Prompt, and run the ``setupvars.bat`` batch file to temporarily set your environment variables. If your ``<INSTALL_DIR>`` is not ``C:\Program Files (x86)\Intel\openvino_2023``, use the correct directory instead.
+You must update several environment variables before you can compile and run OpenVINO™ applications.
 
-.. code-block:: sh
+.. tab-set::
 
-   "C:\Program Files (x86)\Intel\openvino_2023\setupvars.bat"
+   .. tab-item:: PowerShell
+      :sync: powershell
 
+      Open the PowerShell, and run the ``setupvars.ps1`` file to temporarily set your environment variables.
 
-.. important::
+      .. code-block:: sh
 
-   The above command must be re-run every time a new Command Prompt window is opened.
+         . <path-to-setupvars-folder>/setupvars.ps1
+
+   .. tab-item:: Command Prompt
+      :sync: cmd
+
+      Open the Command Prompt, and run the ``setupvars.bat`` batch file to temporarily set your environment variables.
+      If your ``<INSTALL_DIR>`` is not ``C:\Program Files (x86)\Intel\openvino_2023``, use the correct directory instead.
+
+      .. code-block:: sh
+
+         "C:\Program Files (x86)\Intel\openvino_2023\setupvars.bat"
+
+      .. important::
+
+         You need to run the command for each new Command Prompt window.
 
 
 .. note::
@@ -237,14 +253,4 @@ Additional Resources
 * Sample applications: :ref:`OpenVINO™ Toolkit Samples Overview <code samples>`
 * Pre-trained deep learning models: :ref:`Overview of OpenVINO™ Toolkit Pre-Trained Models <model zoo>`
 * IoT libraries and code samples in the GitHUB repository: `Intel® IoT Developer Kit <https://github.com/intel-iot-devkit>`__
-
-<!---
-   To learn more about converting models from specific frameworks, go to:
-   * :ref:`Convert Your Caffe Model <convert model caffe>`
-   * :ref:`Convert Your TensorFlow Model <convert model tf>`
-   * :ref:`Convert Your TensorFlow Lite Model <convert model tfl>`
-   * :ref:`Convert Your Apache MXNet Model <convert model mxnet>`
-   * :ref:`Convert Your Kaldi Model <convert model kaldi>`
-   * :ref:`Convert Your ONNX Model <convert model onnx>`
---->
 
